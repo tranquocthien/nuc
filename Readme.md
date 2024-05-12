@@ -1,44 +1,4 @@
 # macOS  on Intel NUC7i3BNH
-<p align="center">
-<img src="Wiki/Images/homepage_nuc7i3bnh.png" width="50%" alt="NUC7i3BNH" />
-</p>
-<p align="center">
-<a href="https://downloadcenter.intel.com/it/product/95066/Kit-Intel-NUC-NUC7i3BNH" target="_blank"><img src="https://img.shields.io/badge/BIOS-BNKBL357-red.svg" /></a>
-<a href="LICENSE" target="_blank"><img src="https://img.shields.io/badge/License-MIT-purple.svg" /></a>
-<a href="https://github.com/profzei/NUC7i3BNH/releases" target="_blank"><img src="https://img.shields.io/badge/Download-Releases-blue.svg" /></a>
-<a href="https://github.com/profzei/NUC7i3BNH/wiki" target="_blank"><img src="https://img.shields.io/badge/Support-Wiki-green.svg" /></a>
-</p>
-
-
-#### This repo is currently compatible with macOS Ventura and OpenCore 0.9.9
-
-This repo contains information for getting macOS working on an **Intel NUC7i3BNH**.
-
-This EFI is built and tested on **Ventura 13.6.6**: retro-compatibility with Big Sur and Monterey is fine!
-
-**This repository is for personal purposes**
-
-<p align="center">
-<img src="Wiki/Images/AboutThisMac.png" width="50%" alt="About this Mac" />
-</p>
-
-### DISCLAIMER
-
-- Read the entire README before you start.
-- I am not responsible for any damages you may cause.
-- Should you find an error or improve anything — whether in the config or in the documentation — please consider opening an issue or pull request.
-- **Complete EFI packs** are available in the [**Releases**](https://github.com/profzei/NUC7i3BNH/releases) page (please, refer to the rightside menu).
-- Please **do not clone or download** the main branch for daily use: it may include **unstable code** just because it is my repository.
-
-If you find this bootloader configuration useful, consider **giving** it **a star** to make it more visible.
-
-If you find my work useful, please consider **donating via PayPal**. [![donate](https://img.shields.io/badge/-buy%20me%20a%20coffee-orange)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=TSJHK3C2BSQN6&currency_code=EUR)
-
-## Overview
-
-What is an **Intel NUC**? It is a tiny barebone PC size of a few CD cases piled on top of each other.
-
-Mine is **NUC7i3BNH** which is the Core i3 model with a 2.5'' slot for an additional SATA drive coupled with a **BenQ PD2500Q** which is a **2k 25" calibrated monitor**.
 
 ### Specifications
 
@@ -256,14 +216,14 @@ Then update your clock via the built-in internet time setting to update the time
 | Item | Version | Remark |
 | :--- | :--- | :--- |
 | MacOS | 13.6.6 | |
-| [OpenCore](https://github.com/acidanthera/OpenCorePkg/releases) | 0.9.9 | Default Bootloader|
+| [OpenCore](https://github.com/acidanthera/OpenCorePkg/releases) | 1.0.0 | Default Bootloader|
 | [Lilu](https://github.com/acidanthera/Lilu/releases) | 1.6.7 | Kext/process/framework/library patcher |
 | [WhateverGreen](https://github.com/acidanthera/whatevergreen/releases) | 1.6.6 | Handle Graphics card |
 | [AppleALC](https://github.com/acidanthera/AppleALC/releases) | 1.8.9 | Handle/fix onboard audio |
 | [CPUFriend](https://github.com/acidanthera/CPUFriend/releases) | 1.2.7 | Power management |
 | [HibernationFixup](https://github.com/acidanthera/HibernationFixup/releases) | 1.4.9 | Handle hibernate status |
 | [IntelBluetoothFirmware](https://github.com/OpenIntelWireless/IntelBluetoothFirmware/releases) | 2.4.0 | Handle Bluetooth |
-| [AirportItlwm](https://github.com/OpenIntelWireless/itlwm/releases) | 2.3.0 alpha | Handle native Wi-Fi card |
+| [AirportItlwm](https://github.com/OpenIntelWireless/itlwm/releases) | 2.3.0 alpha | Handle native Wi-Fi card | (select ventura version)
 | [IntelMausi](https://github.com/acidanthera/IntelMausi/releases) | 1.0.7 | Handle native Ethernet LAN card |
 | [NVMeFix](https://github.com/acidanthera/NVMeFix/releases) | 1.1.1 | Fix for NVMe SSDs |
 | [RestrictEvents](https://github.com/acidanthera/RestrictEvents/releases) | 1.1.3 | Block unwanted processes |
